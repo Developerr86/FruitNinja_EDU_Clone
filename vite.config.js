@@ -1,6 +1,10 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/your-repo-name/',
+  base: '/FruitNinja_EDU_Clone/',
+  build: {
+    rollupOptions: {
+      external: ['three']
+    }
+  }
 })
-
